@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>XpertEdge Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .header {
+            height: 100px;
+            background: linear-gradient(to bottom, #2a2a72, #f4f4f4);
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .role-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+        .role-buttons button {
+            width: 45%;
+            padding: 10px;
+            background-color: #2a2a72;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .role-buttons button:hover {
+            background-color: #2a2a72;
+            background-image: "C:\Users\arpat\Downloads\XpertEdge\BG_XPERTEDGE.jpg";
+        }
+        button.create {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button.create:hover {
+            background-color: #388e3c;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header"></div>
+        <h2>Signup for XpertEdge</h2>
+        <form action="#" method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <div class="role-buttons">
+                <button type="button">📖 Client</button>
+                <button type="button">👤 Expert</button>
+            </div>
+            <button type="submit" class="create">Create</button>
+        </form>
+    </div>
 </body>
 </html>
